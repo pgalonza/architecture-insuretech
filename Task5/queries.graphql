@@ -1,0 +1,28 @@
+query {
+  client(id: "<client id>") {
+    name
+    age
+}
+
+
+query {
+  client(id: "<client id>") {
+    documents {
+      id
+      type
+      number
+      issueDate
+      expiryDate
+    }
+}
+
+query {
+  client(id: "<client id>") {
+    relatives {
+      id
+      relationType
+      name
+      age
+    }
+  }
+}
